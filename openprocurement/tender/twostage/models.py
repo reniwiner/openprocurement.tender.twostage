@@ -577,7 +577,7 @@ class Tender(BaseTender):
         self.enquiryPeriod = EnquiryPeriod(dict(startDate=self.tenderPeriod.startDate,
                                                 endDate=endDate,
                                                 invalidationDate=self.enquiryPeriod and self.enquiryPeriod.invalidationDate,
-                                                clarificationsUntil=calculate_business_date(endDate, ENQUIRY_STAND_STILL_TIME, self, True)))
+                                                clarificationsUntil=endDate))
         now = get_now()
         self.date = now
         if self.lots:
@@ -590,7 +590,7 @@ class Tender(BaseTender):
         return EnquiryPeriod(dict(startDate=self.tenderPeriod.startDate,
                                   endDate=endDate,
                                   invalidationDate=self.enquiryPeriod and self.enquiryPeriod.invalidationDate,
-                                  clarificationsUntil=calculate_business_date(endDate, ENQUIRY_STAND_STILL_TIME, self, True)))
+                                  clarificationsUntil=endDate))
 
     @serializable(type=ModelType(Period))
     def complaintPeriod(self):
