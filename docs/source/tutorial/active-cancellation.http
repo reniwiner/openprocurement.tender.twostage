@@ -1,4 +1,4 @@
-PATCH /api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/cancellations/9290af2ff14641cbbd27daab24c4ce5b?acc_token=793615b998564fec946a60f44061b53b HTTP/1.0
+PATCH /api/2.3/tenders/69620e7245b048d696d61d9b5061cee2/cancellations/6f0590c33dda4e61953fe2faa02cd3a7?acc_token=12edb463846948e88706a2df2912ba45 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 30
 Content-Type: application/json
@@ -20,30 +20,30 @@ Content-Type: application/json; charset=UTF-8
         "description": "Changed description", 
         "language": "uk", 
         "title": "Notice.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/cancellations/9290af2ff14641cbbd27daab24c4ce5b/documents/3b8ec254e1754cffbcff1d4db77a2f2f?download=cb3504c770ce4148a292eb513aa40ae3", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/69620e7245b048d696d61d9b5061cee2/cancellations/6f0590c33dda4e61953fe2faa02cd3a7/documents/ea1603229efc482587b75997d0219539?download=9298b6bb35a94dc986d006693e0ef403", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-02-16T11:57:14.391065+02:00", 
-        "id": "3b8ec254e1754cffbcff1d4db77a2f2f", 
-        "dateModified": "2017-02-16T11:57:14.391103+02:00"
+        "datePublished": "2017-02-16T13:35:36.279348+02:00", 
+        "id": "ea1603229efc482587b75997d0219539", 
+        "dateModified": "2017-02-16T13:35:36.279391+02:00"
       }, 
       {
         "description": "Changed description", 
         "language": "uk", 
         "title": "Notice-2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/cancellations/9290af2ff14641cbbd27daab24c4ce5b/documents/3b8ec254e1754cffbcff1d4db77a2f2f?download=6b94de4d44464df68a5a5707c4e9e963", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/69620e7245b048d696d61d9b5061cee2/cancellations/6f0590c33dda4e61953fe2faa02cd3a7/documents/ea1603229efc482587b75997d0219539?download=894052308d624f8b87aa538399a6216d", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-02-16T11:57:14.391065+02:00", 
-        "id": "3b8ec254e1754cffbcff1d4db77a2f2f", 
-        "dateModified": "2017-02-16T11:57:14.888163+02:00"
+        "datePublished": "2017-02-16T13:35:36.279348+02:00", 
+        "id": "ea1603229efc482587b75997d0219539", 
+        "dateModified": "2017-02-16T13:35:36.788471+02:00"
       }
     ], 
     "reason": "cancellation reason", 
     "reasonType": "unsuccessful", 
-    "date": "2017-02-16T11:57:15.148714+02:00", 
+    "date": "2017-02-16T13:35:37.070663+02:00", 
     "cancellationOf": "tender", 
-    "id": "9290af2ff14641cbbd27daab24c4ce5b"
+    "id": "6f0590c33dda4e61953fe2faa02cd3a7"
   }
 }
 

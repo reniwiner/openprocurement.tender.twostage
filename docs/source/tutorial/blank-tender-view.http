@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d HTTP/1.0
+GET /api/2.3/tenders/69620e7245b048d696d61d9b5061cee2 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -8,17 +8,17 @@ Content-Type: application/json; charset=UTF-8
   "data": {
     "procurementMethod": "open", 
     "complaintPeriod": {
-      "startDate": "2017-02-16T11:57:06.010042+02:00", 
-      "endDate": "2017-02-16T11:57:07.010042+02:00"
+      "startDate": "2017-02-16T13:35:27.635482+02:00", 
+      "endDate": "2017-02-16T13:35:28.635482+02:00"
     }, 
     "enquiryPeriod": {
-      "startDate": "2017-02-16T11:57:06.010042+02:00", 
-      "clarificationsUntil": "2017-03-18T11:57:03.681494+02:00", 
-      "endDate": "2017-03-18T11:57:03.681494+02:00"
+      "startDate": "2017-02-16T13:35:27.635482+02:00", 
+      "clarificationsUntil": "2017-03-18T13:35:25.283800+02:00", 
+      "endDate": "2017-03-18T13:35:25.283800+02:00"
     }, 
     "submissionMethod": "electronicAuction", 
     "operator": "ua", 
-    "next_check": "2017-03-19T11:57:03.681494+02:00", 
+    "next_check": "2017-03-19T13:35:25.283800+02:00", 
     "procuringEntity": {
       "kind": "general", 
       "name": "ЗОСШ #10 м.Вінниці", 
@@ -46,20 +46,20 @@ Content-Type: application/json; charset=UTF-8
     }, 
     "owner": "broker", 
     "title_en": "Services in school canteens", 
-    "id": "5850b6f8866b495ab93c01287a832c5d", 
+    "id": "69620e7245b048d696d61d9b5061cee2", 
     "title": "Послуги шкільних їдалень", 
     "tenderID": "R-UA-2017-02-16-000001", 
-    "dateModified": "2017-02-16T11:57:06.015771+02:00", 
+    "dateModified": "2017-02-16T13:35:27.642301+02:00", 
     "status": "active.tendering", 
     "tenderPeriod": {
-      "startDate": "2017-02-16T11:57:06.010042+02:00", 
-      "endDate": "2017-03-19T11:57:03.681494+02:00"
+      "startDate": "2017-02-16T13:35:27.635482+02:00", 
+      "endDate": "2017-03-19T13:35:25.283800+02:00"
     }, 
     "auctionPeriod": {
       "shouldStartAfter": "2017-03-21T00:00:00+02:00"
     }, 
     "procurementMethodType": "aboveThresholdTS", 
-    "date": "2017-02-16T11:57:06.010358+02:00", 
+    "date": "2017-02-16T13:35:27.635873+02:00", 
     "minimalStep": {
       "currency": "UAH", 
       "amount": 35.0, 
@@ -89,10 +89,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-03-08T11:57:03.681359+02:00", 
-          "endDate": "2017-04-07T11:57:03.681416+02:00"
+          "startDate": "2017-03-08T13:35:25.283623+02:00", 
+          "endDate": "2017-04-07T13:35:25.283712+02:00"
         }, 
-        "id": "b681beba402b4c5e9cf13db2dec1b70e", 
+        "id": "7a806448d0014f8fab19eaf6b328dfeb", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -122,10 +122,10 @@ Content-Type: application/json; charset=UTF-8
           "locality": "м. Київ"
         }, 
         "deliveryDate": {
-          "startDate": "2017-03-08T11:57:03.681447+02:00", 
-          "endDate": "2017-04-07T11:57:03.681470+02:00"
+          "startDate": "2017-03-08T13:35:25.283746+02:00", 
+          "endDate": "2017-04-07T13:35:25.283773+02:00"
         }, 
-        "id": "5f47716322524940920f071a1df7a2f1", 
+        "id": "9462dda6089446b3b7aa7cda61518b33", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"

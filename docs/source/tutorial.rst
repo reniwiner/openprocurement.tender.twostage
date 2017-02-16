@@ -43,6 +43,9 @@ body of response reveals the information about the created tender: its internal
 `id` (that matches the `Location` segment), its official `tenderID` and
 `dateModified` datestamp stating the moment in time when tender was last
 modified.  Note that tender is created with `active.tendering` status.
+Take a look that 'complaintPeriod' in seconds, because complaints a temporarily disabled.
+'enquiryPeriod' ends the day before 'tenderPeriod' and
+'enquiryPeriod:clarificationUnitl == enquiryPeriod:endDate'
 
 The peculiarity of the Open Two Stage procedure is that ``procurementMethodType`` was changed from ``belowThreshold`` to ``aboveThresholdTS``.
 Also there is no opportunity to set up ``enquiryPeriod``, it will be assigned automatically.
@@ -126,7 +129,7 @@ And again we can confirm that there are two documents uploaded.
 
 In case we made an error, we can reupload the document over the older version:
 
-.. include:: tutorial/update-award-criteria.http
+.. include:: tutorial/update-ward-criteria.http
    :code:
 
 And we can see that it is overriding the original version:
@@ -227,10 +230,10 @@ It is possible to check the uploaded documents:
 
 .. _envelopes:
 
-Financial, eligibility and qualification documents uploading
+Financial documents uploading
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Financial, eligibility and qualification documents are also a part of Bid but are located in different end-points.
+Financial documents are a part of Bid but are located in different end-points.
 
 In order to create and/or get financial document ``financial_documents`` end-point should be used:
 
@@ -242,27 +245,7 @@ Get financial documents:
 .. include:: tutorial/bidder-financial-documents.http
    :code:
 
-In order to create and/or get eligibility document ``eligibility_documents`` end-point should be used:
-
-.. include:: tutorial/upload-bid-eligibility-document-proposal.http
-   :code:
-
-In order to create and/or get qualification document ``qualification_documents`` end-point should be used:
-
-.. include:: tutorial/upload-bid-qualification-document-proposal.http
-   :code:
-
-
-`Financial` and `qualification` documents will be publicly accessible after the auction.
-`Eligibility` documents will become publicly accessible starting from tender pre-qualification period.
-
-Here is bidder proposal with all documents.
-
-.. include:: tutorial/bidder-view-financial-documents.http
-   :code:
-
-Note that financial, eligibility, and qualification documents are stored in `financialDocuments`, `eligibilityDocuments`, and `qualificationDocuments` attributes of :ref:`Bid`.
-
+`Financial` documents will be publicly accessible after the auction.
 
 Bid invalidation
 ~~~~~~~~~~~~~~~~
