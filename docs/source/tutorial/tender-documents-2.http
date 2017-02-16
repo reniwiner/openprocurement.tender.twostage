@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/634f162a52544f1285269e6c75a350bb/documents?acc_token=d36e5cfa2007401ba202822aa162c0d6 HTTP/1.0
+GET /api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/documents?acc_token=793615b998564fec946a60f44061b53b HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -9,22 +9,22 @@ Content-Type: application/json; charset=UTF-8
     {
       "language": "uk", 
       "title": "Notice.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/634f162a52544f1285269e6c75a350bb/documents/194968882555454c948414d2ef796d87?download=6672dbde7b59457181716cba984bccf2", 
+      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/documents/4d770985b7a841dbb172a79431f88157?download=1274c7f2e36449e9867140b0baf8f3d9", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2017-02-13T17:50:59.022627+02:00", 
-      "id": "194968882555454c948414d2ef796d87", 
-      "dateModified": "2017-02-13T17:50:59.022661+02:00"
+      "datePublished": "2017-02-16T11:57:06.668408+02:00", 
+      "id": "4d770985b7a841dbb172a79431f88157", 
+      "dateModified": "2017-02-16T11:57:06.668444+02:00"
     }, 
     {
       "language": "uk", 
       "title": "AwardCriteria.pdf", 
-      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/634f162a52544f1285269e6c75a350bb/documents/60149115f8284c1883de2dbc7b454c29?download=80ad44e5c10b4f13a747ec18813f135f", 
+      "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/documents/313b15e0c904489e9868c0db73eed310?download=f196407d7fbc4391a2e820cd8f5c30d4", 
       "format": "application/pdf", 
       "documentOf": "tender", 
-      "datePublished": "2017-02-13T17:50:59.135666+02:00", 
-      "id": "60149115f8284c1883de2dbc7b454c29", 
-      "dateModified": "2017-02-13T17:50:59.135697+02:00"
+      "datePublished": "2017-02-16T11:57:06.773953+02:00", 
+      "id": "313b15e0c904489e9868c0db73eed310", 
+      "dateModified": "2017-02-16T11:57:06.773986+02:00"
     }
   ]
 }

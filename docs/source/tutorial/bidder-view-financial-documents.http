@@ -1,4 +1,4 @@
-GET /api/2.3/tenders/634f162a52544f1285269e6c75a350bb/bids/be8f9392b5564a6690713d9f69a62e59?acc_token=d80a2f81e8104124813ae413464415aa HTTP/1.0
+GET /api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/bids/018a3958273a439ba83f5c996cb9525c?acc_token=ee58318f965b41c1849bac68a6999260 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Host: api-sandbox.openprocurement.org
 
@@ -12,24 +12,24 @@ Content-Type: application/json; charset=UTF-8
         "confidentiality": "public", 
         "language": "uk", 
         "title": "Proposal.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/634f162a52544f1285269e6c75a350bb/bids/be8f9392b5564a6690713d9f69a62e59/documents/e5a8fb1ce67f46c39347ecc4e4258a6f?download=3992f11069c5463ea021e4a17ef1d430", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/bids/018a3958273a439ba83f5c996cb9525c/documents/2a545ab3d99b40c3ac4f2b5eb16e3eff?download=917e8726d4f941bb9eccc8ce32f2b469", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-02-13T17:51:00.210078+02:00", 
-        "id": "e5a8fb1ce67f46c39347ecc4e4258a6f", 
-        "dateModified": "2017-02-13T17:51:00.210105+02:00"
+        "datePublished": "2017-02-16T11:57:07.873882+02:00", 
+        "id": "2a545ab3d99b40c3ac4f2b5eb16e3eff", 
+        "dateModified": "2017-02-16T11:57:07.873914+02:00"
       }, 
       {
         "confidentiality": "buyerOnly", 
         "language": "uk", 
         "title": "Proposal_top_secrets.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/634f162a52544f1285269e6c75a350bb/bids/be8f9392b5564a6690713d9f69a62e59/documents/8ae6309aae404e339f695a103484d1e4?download=15435c63b35841409dad1307ec5fade7", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/bids/018a3958273a439ba83f5c996cb9525c/documents/163b0fbd8cf04677a1e86fd53b14dcb9?download=82ce90cfe71d4579851dbdfb1500f521", 
         "confidentialityRationale": "Only our company sells badgers with pink hair.", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-02-13T17:51:00.324355+02:00", 
-        "id": "8ae6309aae404e339f695a103484d1e4", 
-        "dateModified": "2017-02-13T17:51:00.324387+02:00"
+        "datePublished": "2017-02-16T11:57:08.000731+02:00", 
+        "id": "163b0fbd8cf04677a1e86fd53b14dcb9", 
+        "dateModified": "2017-02-16T11:57:08.000764+02:00"
       }
     ], 
     "value": {
@@ -42,23 +42,23 @@ Content-Type: application/json; charset=UTF-8
         "confidentiality": "public", 
         "language": "uk", 
         "title": "financial_doc.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/634f162a52544f1285269e6c75a350bb/bids/be8f9392b5564a6690713d9f69a62e59/financial_documents/c76e14003f084345b1f2d976af5e43a8?download=a436b3a7326d4a0780ac71e862642b8d", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/bids/018a3958273a439ba83f5c996cb9525c/financial_documents/6acf22525b954bd395d315401ab9ad72?download=6cf2a4e321f44a8597ae8c1d1630260e", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-02-13T17:51:00.558237+02:00", 
-        "id": "c76e14003f084345b1f2d976af5e43a8", 
-        "dateModified": "2017-02-13T17:51:00.558264+02:00"
+        "datePublished": "2017-02-16T11:57:08.246058+02:00", 
+        "id": "6acf22525b954bd395d315401ab9ad72", 
+        "dateModified": "2017-02-16T11:57:08.246091+02:00"
       }, 
       {
         "confidentiality": "public", 
         "language": "uk", 
         "title": "financial_doc2.pdf", 
-        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/634f162a52544f1285269e6c75a350bb/bids/be8f9392b5564a6690713d9f69a62e59/financial_documents/2a82d2776ebc4245b9338b8626280934?download=c9982ce04fbd47c9941550e702a1a318", 
+        "url": "http://api-sandbox.openprocurement.org/api/2.3/tenders/5850b6f8866b495ab93c01287a832c5d/bids/018a3958273a439ba83f5c996cb9525c/financial_documents/e44334dcc3cf45919bd5c6f42da33664?download=d5e8b1418965442d916919523783b73e", 
         "format": "application/pdf", 
         "documentOf": "tender", 
-        "datePublished": "2017-02-13T17:51:00.685375+02:00", 
-        "id": "2a82d2776ebc4245b9338b8626280934", 
-        "dateModified": "2017-02-13T17:51:00.685402+02:00"
+        "datePublished": "2017-02-16T11:57:08.377615+02:00", 
+        "id": "e44334dcc3cf45919bd5c6f42da33664", 
+        "dateModified": "2017-02-16T11:57:08.377648+02:00"
       }
     ], 
     "tenderers": [
@@ -83,8 +83,8 @@ Content-Type: application/json; charset=UTF-8
         }
       }
     ], 
-    "date": "2017-02-13T17:50:59.987207+02:00", 
-    "id": "be8f9392b5564a6690713d9f69a62e59"
+    "date": "2017-02-16T11:57:07.646896+02:00", 
+    "id": "018a3958273a439ba83f5c996cb9525c"
   }
 }
 

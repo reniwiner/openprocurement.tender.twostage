@@ -1,4 +1,4 @@
-POST /api/2.3/tenders/bc8d4930816f4bcd928fd98ebc3b6de2/bids HTTP/1.0
+POST /api/2.3/tenders/92273add0c664e1ca95782f88c4ad99f/bids HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 849
 Content-Type: application/json
@@ -8,13 +8,13 @@ DATA:
   "data": {
     "lotValues": [
       {
-        "relatedLot": "45f6eb5d2e70481a9806ea127ee05f71", 
+        "relatedLot": "759fad6c111e4cb9a20d5c0466beabc6", 
         "value": {
           "amount": 500
         }
       }, 
       {
-        "relatedLot": "173b89d2c67d482db7c94a8f7cbb365d", 
+        "relatedLot": "f3cfaf91e5274d84af8db37f66e85144", 
         "value": {
           "amount": 500
         }
@@ -47,20 +47,20 @@ DATA:
 
 Response: 201 Created
 Content-Type: application/json; charset=UTF-8
-Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/bc8d4930816f4bcd928fd98ebc3b6de2/bids/9294f55ff6ac48a3b57900df81e9ccf7
+Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/92273add0c664e1ca95782f88c4ad99f/bids/57ba5ce7bfe143a98d40bf5e8ab07b4e
 {
   "access": {
-    "transfer": "7a8e71f528db4d81bcc32387d9a1203d", 
-    "token": "697a284a84bc4bf5a8a74cc58773440c"
+    "transfer": "90ae9bca9b2a48448d2259a4c4513641", 
+    "token": "db0040a4beb94770880c5e44b1b66baa"
   }, 
   "data": {
-    "date": "2017-02-13T17:51:08.996709+02:00", 
+    "date": "2017-02-16T11:57:16.896063+02:00", 
     "status": "pending", 
-    "id": "9294f55ff6ac48a3b57900df81e9ccf7", 
+    "id": "57ba5ce7bfe143a98d40bf5e8ab07b4e", 
     "lotValues": [
       {
-        "relatedLot": "45f6eb5d2e70481a9806ea127ee05f71", 
-        "date": "2017-02-13T17:51:08.997499+02:00", 
+        "relatedLot": "759fad6c111e4cb9a20d5c0466beabc6", 
+        "date": "2017-02-16T11:57:16.896721+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
@@ -69,8 +69,8 @@ Location: http://api-sandbox.openprocurement.org/api/2.3/tenders/bc8d4930816f4bc
         }
       }, 
       {
-        "relatedLot": "173b89d2c67d482db7c94a8f7cbb365d", 
-        "date": "2017-02-13T17:51:08.998073+02:00", 
+        "relatedLot": "f3cfaf91e5274d84af8db37f66e85144", 
+        "date": "2017-02-16T11:57:16.897575+02:00", 
         "status": "pending", 
         "value": {
           "currency": "UAH", 
