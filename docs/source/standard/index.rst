@@ -23,6 +23,7 @@ areas that were not covered by it.
    qualification
    award
    question
+   complaint
    contract
    util
    cancellation
