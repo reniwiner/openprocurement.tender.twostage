@@ -45,11 +45,11 @@ TENDERING_DAYS = 5
 TENDERING_DURATION = timedelta(days=TENDERING_DAYS)
 TENDERING_AUCTION = timedelta(days=1)
 QUESTIONS_STAND_STILL = timedelta(days=1)
-PREQUALIFICATION_COMPLAINT_STAND_STILL = timedelta(seconds=1)
-COMPLAINT_STAND_STILL = timedelta(seconds=1)
-COMPLAINT_SUBMIT_TIME = timedelta(seconds=1)
+PREQUALIFICATION_COMPLAINT_STAND_STILL = timedelta(seconds=0)
+COMPLAINT_STAND_STILL = timedelta(seconds=0)
+COMPLAINT_SUBMIT_TIME = timedelta(seconds=0)
 TENDERING_EXTRA_PERIOD = timedelta(days=3)
-STAND_STILL_TIME = timedelta(seconds = 1)
+STAND_STILL_TIME = timedelta(seconds = 0)
 
 class BidModelType(ModelType):
 
