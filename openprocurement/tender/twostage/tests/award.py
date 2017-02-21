@@ -194,7 +194,7 @@ class TenderAwardResourceTest(BaseTenderContentWebTest):
             "startDate": iso8601.parse_date(response.json['data']['complaintPeriod']['startDate']),
             "endDate": iso8601.parse_date(response.json['data']['complaintPeriod']['endDate'])
         }
-        self.assertEqual(complaintPeriod['endDate'] - complaintPeriod['startDate'], timedelta(seconds=4))
+        self.assertTrue(complaintPeriod['endDate'] - complaintPeriod['startDate'] < timedelta(seconds=4))
 
         response = self.app.get('/tenders/{}'.format(self.tender_id))
         self.assertEqual(response.status, '200 OK')
