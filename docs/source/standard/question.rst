@@ -9,6 +9,9 @@ Question
 Schema
 ------
 
+.. important::
+   Unattended requests do not block the procedure. 
+
 :id:
     uid, auto-generated
 

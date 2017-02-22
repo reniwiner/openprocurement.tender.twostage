@@ -29,18 +29,7 @@ Schema
     including CPV and GSIN.
 
     It is mandatory for `classification.scheme` to be `CPV`. The
-    `classification.id` should be valid CPV code.
-
-:additionalClassifications:
-    List of :ref:`Classification` objects
-
-    |ocdsDescription|
-    An array of additional classifications for the item. See the
-    itemClassificationScheme codelist for common options to use in OCDS. 
-    This may also be used to present codes from an internal classification
-    scheme.
-
-    It is mandatory to have at least one item with `ДКПП` as `scheme`.
+    `classification.id` should be a valid CPV code.
 
 :unit:
     :ref:`Unit`

@@ -23,21 +23,9 @@ Schema
     |ocdsDescription|
     The primary identifier for this organization.
 
-:additionalIdentifiers:
-    List of :ref:`identifier` objects
-
 :address:
     :ref:`Address`, required
 
 :contactPoint:
     :ref:`ContactPoint`, required
 
-:kind:
-    string
-    
-    Type of procuring entity
-
-    Possible values:
-        - ``general`` - Procuring entity (general)
-        - ``special`` - Procuring entity that operates in certain spheres of economic activity
-        - ``defense`` - Procuring entity that conducts procurement for the defense needs
