@@ -1,18 +1,19 @@
 .. _tutorial:
 
 Tutorial
+========
 
 Exploring basic rules
 ---------------------
 
-Let's try exploring the `/tenders` endpoint:
+Let's try to explore the `/tenders` endpoint:
 
 .. include:: tutorial/tender-listing.http
    :code:
 
-Just invoking it reveals empty set.
+Just invoking it reveals an empty set.
 
-Now let's attempt creating some tender:
+Now let's attempt to create a tender:
 
 .. include:: tutorial/tender-post-attempt.http
    :code:
@@ -29,26 +30,23 @@ Error states that no `data` has been found in JSON body.
 
 .. index:: Tender
 
-Creating tender
----------------
+Creating a tender
+-----------------
 
 Let's provide the data attribute in the submitted body :
 
 .. include:: tutorial/tender-post-attempt-json-data.http
    :code:
 
-Success! Now we can see that new object was created. Response code is `201`
+Success! Now we can see that a new object was created. Response code is `201`
 and `Location` response header reports the location of the created object.  The
-body of response reveals the information about the created tender: its internal
+body of the response reveals the information about the created tender: its internal
 `id` (that matches the `Location` segment), its official `tenderID` and
 `dateModified` datestamp stating the moment in time when tender was last
 modified.  Note that tender is created with `active.tendering` status.
-Take a look that 'complaintPeriod' in seconds, because complaints a temporarily disabled.
+Note that 'complaintPeriod' in seconds, because complaints have been temporarily disabled.
 'enquiryPeriod' ends the day before 'tenderPeriod' and
 'enquiryPeriod:clarificationUnitl == enquiryPeriod:endDate'
-
-The peculiarity of the Open Two Stage procedure is that ``procurementMethodType`` was changed from ``belowThreshold`` to ``aboveThresholdTS``.
-Also there is no opportunity to set up ``enquiryPeriod``, it will be assigned automatically.
 
 Let's access the URL of the created object (the `Location` header of the response):
 
@@ -57,38 +55,38 @@ Let's access the URL of the created object (the `Location` header of the respons
 
 .. XXX body is empty for some reason (printf fails)
 
-We can see the same response we got after creating tender.
+We can see the same response we got after creating the tender.
 
-Let's see what listing of tenders reveals us:
+Let's see what listing of tenders reveals to us:
 
 .. include:: tutorial/tender-listing-no-auth.http
    :code:
 
 We do see the internal `id` of a tender (that can be used to construct full URL by prepending `http://api-sandbox.openprocurement.org/api/0/tenders/`) and its `dateModified` datestamp.
 
-Modifying tender
-----------------
+Modifying the tender
+--------------------
 
-Let's update tender by supplementing it with all other essential properties:
+Let's update the tender by supplementing it with all other essential properties:
 
 .. include:: tutorial/patch-items-value-periods.http
    :code:
 
 .. XXX body is empty for some reason (printf fails)
 
-We see the added properies have merged with existing tender data. Additionally, the `dateModified` property was updated to reflect the last modification datestamp.
+We see the added properies have merged with the existing tender data. Additionally, the `dateModified` property was updated to reflect the last modification datestamp.
 
 Checking the listing again reflects the new modification date:
 
 .. include:: tutorial/tender-listing-after-patch.http
    :code:
 
-Procuring entity can not change tender if there are less than 7 days before tenderPeriod ends. Changes will not be accepted by API.
+Procuring entity cannot change the tender if there are less than 3 days before tenderPeriod ends. Changes will not be accepted by API.
 
 .. include:: tutorial/update-tender-after-enqiery.http
    :code:
 
-That is why tenderPeriod has to be extended by 7 days.
+That is why tenderPeriod has to be extended by 3 days.
 
 .. include:: tutorial/update-tender-after-enqiery-with-update-periods.http
    :code:
@@ -122,7 +120,7 @@ The single array element describes the uploaded document. We can upload more doc
 .. include:: tutorial/upload-award-criteria.http
    :code:
 
-And again we can confirm that there are two documents uploaded.
+And again we can confirm that there have been two documents uploaded.
 
 .. include:: tutorial/tender-documents-2.http
    :code:
@@ -158,13 +156,13 @@ One can retrieve either questions list:
 .. include:: tutorial/list-question.http
    :code:
 
-or individual answer:
+or an individual answer:
 
 .. include:: tutorial/get-answer.http
    :code:
 
 
-Enquiries can be made only during ``Tender.enqueryPeriod``
+Enquiries can be made only during ``Tender.enqueryPeriod``, which ends a day before t``enderPeriod:endDate``
 
 .. include:: tutorial/ask-question-after-enquiry-period.http
    :code:
@@ -172,8 +170,8 @@ Enquiries can be made only during ``Tender.enqueryPeriod``
 
 .. index:: Bidding
 
-Registering bid
----------------
+Registering a bid
+-----------------
 
 Tender status ``active.tendering`` allows registration of bids.
 
@@ -187,7 +185,7 @@ and approve to ``pending`` status:
 .. include:: tutorial/activate-bidder.http
    :code:
 
-Proposal Uploading
+Proposal uploading
 ~~~~~~~~~~~~~~~~~~
 
 Then bidder should upload proposal technical document(s):
@@ -201,7 +199,7 @@ Confidentiality
 Documents can be either public or private:
 
   1. Privacy settings can be changed only for the latest version of the document.
-  2. When you upload new version of the document, privacy settings are copied from the previous version.
+  2. When you upload a new version of the document, privacy settings are copied from the previous version.
   3. Privacy settings can be changed only during `tenderPeriod` (with `active.tendering` status).
   4. If tender has status `active.qualification` winner can upload only public documents.
 
@@ -319,7 +317,7 @@ Procuring entity approves qualifications by switching to next status:
 
 If qualification has been cancelled, new `Qualification` object is generated for this participant.
 
-.. You may notice 10 day stand-still time set in `qualificationPeriod`.
+.. You may notice 5-minute stand-still time set in `qualificationPeriod`.
 
 Auction
 -------
@@ -416,12 +414,12 @@ Let's view separate contract document:
 .. include:: tutorial/tender-contract-get.http
     :code:
 
-Cancelling tender
------------------
+Cancelling a tender
+-------------------
 
-Tender creator can cancel tender anytime. The following steps should be applied:
+PE can cancel the tender anytime. The following steps should be applied:
 
-1. Prepare cancellation request.
+1. Prepare a cancellation request.
 2. Fill it with the protocol describing the cancellation reasons.
 3. Cancel the tender with the prepared reasons.
 

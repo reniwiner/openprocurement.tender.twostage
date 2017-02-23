@@ -22,7 +22,6 @@ Contents:
    standard/index
    tutorial
    multiple_lots_tutorial
-   acceleration
    reference
 
 Indices and tables

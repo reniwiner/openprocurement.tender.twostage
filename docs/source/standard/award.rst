@@ -33,11 +33,6 @@ Schema
     |ocdsDescription|
     Award description.
 
-:eligible:
-    bool
-
-    Confirms compliance of eligibility criteria set by the procuring entity in the tendering documents.
-
 :qualified:
     bool
 
@@ -84,16 +79,8 @@ Schema
     List of :ref:`Document` objects
     
     |ocdsDescription|
-    All documents and attachments related to the award, including any notices. 
+    All documents and attachments related to the award. 
     
-:complaints:
-    List of :ref:`Complaint` objects
-
-:complaintPeriod:
-    :ref:`period`
-
-    The timeframe when complaints can be submitted.
-
 :lotID:
     string
 

@@ -1,27 +1,21 @@
 Overview
 ========
 
-The Open Procurement `Open Two Stage` procedure is plugin to `Open Procurement API
+The Open Procurement `Two-stage tendering` procedure is a plugin to `Open Procurement API
 <http://api-docs.openprocurement.org/>`_ software.  
 
-REST-ful interface to plugin is in line with core software design principles. 
-
+REST-ful interface to plugin is in line with the core software design principles. 
 
 Conventions
 -----------
 
-This plugin conventions follow the `Open Procurement API conventions
+These plugin conventions follow the `Open Procurement API conventions
 <http://api-docs.openprocurement.org/en/latest/overview.html#conventions>`_.
-
-Main responsibilities
----------------------
-
-Open Two Stage procedure is dedicated to Open Tender procedure for threshold procurements with publication in English. The code for that type of procedure is `aboveThresholdTS`.
 
 Project status
 --------------
 
-The project is in active development and has pilot installations.
+The project is in active development.
 
 The source repository for this project is on GitHub: https://github.com/openprocurement/openprocurement.tender.twostage
 

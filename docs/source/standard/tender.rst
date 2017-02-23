@@ -11,7 +11,7 @@ Schema
 ------
 
 :title:
-   string, multilingual, uk (title) and en (title_en) translations are required
+   string, multilingual, uk (title) is obligatory, en (title_en) is optional
 
    The name of the tender, displayed in listings. You can include the following items:
 
@@ -37,7 +37,7 @@ Schema
 :procurementMethodType:
     string
 
-    value: ``aboveThresholdEU``
+    value: ``aboveThresholdTS``
 
 :procuringEntity:
    :ref:`ProcuringEntity`, required
@@ -84,11 +84,6 @@ Schema
 
    Questions to ``procuringEntity`` and answers to them.
 
-:complaints:
-   List of :ref:`complaint` objects
-
-   Complaints to tender conditions and their resolutions.
-
 :bids:
    List of :ref:`bid` objects
 
@@ -133,7 +128,7 @@ Schema
 :qualificationPeriod:
    :ref:`period`, read-only
 
-   This period consists of qualification and 10 days of stand still period.
+   This period consists of qualification and up till 5 minutes of stand still period.
 
    |ocdsDescription|
    Period when qualification can be submitted with stand still period.
