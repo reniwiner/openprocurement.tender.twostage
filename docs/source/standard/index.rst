@@ -17,13 +17,11 @@ areas that were not covered by it.
    procuringentity
    item
    document
-   confidentialdocument
    lot
    bid
    qualification
    award
    question
-   complaint
    contract
    util
    cancellation

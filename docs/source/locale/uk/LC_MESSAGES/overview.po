@@ -7,10 +7,10 @@ msgstr ""
 "PO-Revision-Date: 2016-04-29 12:31+0300\n"
 "Last-Translator: Zoriana Zaiats <sorenabell@quintagroup.com>\n"
 "Language-Team: Ukrainian <support@quintagroup.com>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.5\n"
 
@@ -18,83 +18,19 @@ msgstr ""
 msgid "Overview"
 msgstr "Огляд"
 
-#: ../../source/overview.rst:4
-msgid ""
-"The Open Procurement `Open EU` procedure is plugin to `Open Procurement API "
-"<http://api-docs.openprocurement.org/>`_ software."
-msgstr ""
-"Відкриті торги з публікацією англійською мовою (OpenEU) це плагін до `Open "
-"Procurement API <http://api-docs.openprocurement.org/>`_."
-
-#: ../../source/overview.rst:7
-msgid ""
-"REST-ful interface to plugin is in line with core software design "
-"principles."
-msgstr ""
-"REST-ful інтерфейс для плагіна відповідає основним принципам дизайну "
-"програмного забезпечення."
-
-#: ../../source/overview.rst:11
+#: ../../source/overview.rst:10
 msgid "Conventions"
 msgstr "Домовленості"
 
-#: ../../source/overview.rst:13
-msgid ""
-"This plugin conventions follow the `Open Procurement API conventions <http"
-"://api-docs.openprocurement.org/en/latest/overview.html#conventions>`_."
-msgstr ""
-"Цей плагін підтримує `домовленості Open Procurement API <http://api-"
-"docs.openprocurement.org/en/latest/overview.html#conventions>`_."
-
-#: ../../source/overview.rst:17
-msgid "Main responsibilities"
-msgstr "Основні задачі"
-
-#: ../../source/overview.rst:19
-msgid ""
-"Open EU procedure is dedicated to Open Tender procedure for threshold "
-"procurements with publication in English. The code for that type of "
-"procedure is `aboveThresholdEU`."
-msgstr ""
-"OpenEU процедура, що описана в цій документації, стосується процедури "
-"відкритих торгів з публікацією англійською мовою для понадпорогових "
-"закупівель. Код процедури такого типу - `aboveThresholdEU`."
-
-#: ../../source/overview.rst:22
+#: ../../source/overview.rst:16
 msgid "Project status"
 msgstr "Стан проекту"
 
-#: ../../source/overview.rst:24
-msgid "The project is in active development and has pilot installations."
-msgstr "Цей проект активно розробляється і має пілотні встановлення."
-
-#: ../../source/overview.rst:26
-msgid ""
-"The source repository for this project is on GitHub: "
-"https://github.com/openprocurement/openprocurement.tender.openeu"
-msgstr ""
-"Репозиторій цього проекту є на GitHub: "
-"https://github.com/openprocurement/openprocurement.tender.openeu"
-
-#: ../../source/overview.rst:28
-msgid ""
-"You can leave feedback by raising a new issue on the `issue tracker "
-"<https://github.com/openprocurement/openprocurement.tender.openeu/issues>`_ "
-"(GitHub registration necessary).  For general discussion use `Open "
-"Procurement General <https://groups.google.com/group/open-procurement-"
-"general>`_ maillist."
-msgstr ""
-"Повідомляйте про всі проблеми та поради через `issue tracker "
-"<https://github.com/openprocurement/openprocurement.tender.openeu/issues>`_ "
-"(реєстрація на GitHub обов’язкова). Загальне обговорення відбувається через "
-"розсилку `Open Procurement General <https://groups.google.com/group/open-"
-"procurement-general>`_."
-
-#: ../../source/overview.rst:48
+#: ../../source/overview.rst:42
 msgid "API stability"
 msgstr "Стабільність API"
 
-#: ../../source/overview.rst:49
+#: ../../source/overview.rst:43
 msgid ""
 "API is highly unstable, and while API endpoints are expected to remain "
 "relatively stable the data exchange formats are expected to be changed a "
@@ -106,27 +42,27 @@ msgstr ""
 "через `Open Procurement API <https://groups.google.com/group/open-"
 "procurement-api>`_."
 
-#: ../../source/overview.rst:55
+#: ../../source/overview.rst:49
 msgid "Next steps"
 msgstr "Наступні кроки"
 
-#: ../../source/overview.rst:56
+#: ../../source/overview.rst:50
 msgid ""
 "You might find it helpful to look at the :ref:`tutorial` or "
 ":ref:`mulitlot_tutorial`."
 msgstr "Далі читайте :ref:`tutorial` або :ref:`mulitlot_tutorial`."
 
-#: ../../source/overview.rst:35
+#: ../../source/overview.rst:29
 msgid "Documentation of related packages"
 msgstr "Документація пов’язаних пакетів"
 
-#: ../../source/overview.rst:37
+#: ../../source/overview.rst:31
 msgid ""
 "`OpenProcurement API <http://api-docs.openprocurement.org/en/latest/>`_"
 msgstr ""
 "`OpenProcurement API <http://api-docs.openprocurement.org/uk_UA/latest/>`_"
 
-#: ../../source/overview.rst:39
+#: ../../source/overview.rst:33
 msgid ""
 "`Open tender procedure (OpenUA) <http://openua.api-"
 "docs.openprocurement.org/en/latest/>`_"
@@ -134,7 +70,7 @@ msgstr ""
 "`Відкриті торги (OpenUA) <http://openua.api-"
 "docs.openprocurement.org/uk/latest/>`_"
 
-#: ../../source/overview.rst:41
+#: ../../source/overview.rst:35
 msgid ""
 "`Reporting, negotiation procurement procedure and negotiation procedure for "
 "the urgent need  <http://limited.api-docs.openprocurement.org/en/latest/>`_"
@@ -143,7 +79,7 @@ msgstr ""
 "переговорна процедура за нагальною потребою <http://limited.api-"
 "docs.openprocurement.org/uk/latest/>`_"
 
-#: ../../source/overview.rst:43
+#: ../../source/overview.rst:37
 msgid ""
 "`Defense open tender <http://defense.api-"
 "docs.openprocurement.org/en/latest/>`_"
@@ -151,7 +87,7 @@ msgstr ""
 "`Процедура відкритих торгів для оборонних цілей <http://defense.api-"
 "docs.openprocurement.org/uk/latest/>`_"
 
-#: ../../source/overview.rst:45
+#: ../../source/overview.rst:39
 msgid ""
 "`Contracting API interface to OpenProcurement database <http://contracting"
 ".api-docs.openprocurement.org/en/latest/>`_"
@@ -159,3 +95,109 @@ msgstr ""
 "`API для реєстрації даних пов’язаних з договором <http://contracting.api-"
 "docs.openprocurement.org/uk/latest/>`_"
 
+#: ../../source/overview.rst:20
+msgid ""
+"The source repository for this project is on GitHub: "
+"https://github.com/openprocurement/openprocurement.tender.twostage"
+msgstr ""
+
+#: ../../source/overview.rst:22
+msgid ""
+"You can leave feedback by raising a new issue on the `issue tracker "
+"<https://github.com/openprocurement/openprocurement.tender.twostage/issues>`_"
+" (GitHub registration necessary).  For general discussion use `Open "
+"Procurement General <https://groups.google.com/group/open-procurement-"
+"general>`_ maillist."
+msgstr ""
+
+#: ../../source/overview.rst:4
+msgid ""
+"The Open Procurement `Two-stage tendering` procedure is a plugin to `Open "
+"Procurement API <http://api-docs.openprocurement.org/>`_ software."
+msgstr ""
+
+#: ../../source/overview.rst:7
+msgid ""
+"REST-ful interface to plugin is in line with the core software design "
+"principles."
+msgstr ""
+
+#: ../../source/overview.rst:12
+msgid ""
+"These plugin conventions follow the `Open Procurement API conventions <http"
+"://api-docs.openprocurement.org/en/latest/overview.html#conventions>`_."
+msgstr ""
+
+#: ../../source/overview.rst:18
+msgid "The project is in active development."
+msgstr ""
+
+#~ msgid "The project is in active development and."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "REST-ful interface to plugin is in line with core software design "
+#~ "principles."
+#~ msgstr ""
+#~ "REST-ful інтерфейс для плагіна відповідає основним принципам дизайну "
+#~ "програмного забезпечення."
+
+#~ msgid ""
+#~ "This plugin conventions follow the `Open Procurement API conventions <http"
+#~ "://api-docs.openprocurement.org/en/latest/overview.html#conventions>`_."
+#~ msgstr ""
+#~ "Цей плагін підтримує `домовленості Open Procurement API <http://api-"
+#~ "docs.openprocurement.org/en/latest/overview.html#conventions>`_."
+
+#~ msgid "Main responsibilities"
+#~ msgstr "Основні задачі"
+
+#~ msgid "The project is in active development and has pilot installations."
+#~ msgstr "Цей проект активно розробляється і має пілотні встановлення."
+
+#~ msgid ""
+#~ "The Open Procurement `Open Two Stage` procedure is plugin to `Open "
+#~ "Procurement API <http://api-docs.openprocurement.org/>`_ software."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Open Two Stage procedure is dedicated to Open Tender procedure for threshold"
+#~ " procurements with publication in English. The code for that type of "
+#~ "procedure is `aboveThresholdTS`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Open Procurement `Open EU` procedure is plugin to `Open Procurement API "
+#~ "<http://api-docs.openprocurement.org/>`_ software."
+#~ msgstr ""
+#~ "Відкриті торги з публікацією англійською мовою (OpenEU) це плагін до `Open "
+#~ "Procurement API <http://api-docs.openprocurement.org/>`_."
+
+#~ msgid ""
+#~ "Open EU procedure is dedicated to Open Tender procedure for threshold "
+#~ "procurements with publication in English. The code for that type of "
+#~ "procedure is `aboveThresholdEU`."
+#~ msgstr ""
+#~ "OpenEU процедура, що описана в цій документації, стосується процедури "
+#~ "відкритих торгів з публікацією англійською мовою для понадпорогових "
+#~ "закупівель. Код процедури такого типу - `aboveThresholdEU`."
+
+#~ msgid ""
+#~ "The source repository for this project is on GitHub: "
+#~ "https://github.com/openprocurement/openprocurement.tender.openeu"
+#~ msgstr ""
+#~ "Репозиторій цього проекту є на GitHub: "
+#~ "https://github.com/openprocurement/openprocurement.tender.openeu"
+
+#~ msgid ""
+#~ "You can leave feedback by raising a new issue on the `issue tracker "
+#~ "<https://github.com/openprocurement/openprocurement.tender.openeu/issues>`_ "
+#~ "(GitHub registration necessary).  For general discussion use `Open "
+#~ "Procurement General <https://groups.google.com/group/open-procurement-"
+#~ "general>`_ maillist."
+#~ msgstr ""
+#~ "Повідомляйте про всі проблеми та поради через `issue tracker "
+#~ "<https://github.com/openprocurement/openprocurement.tender.openeu/issues>`_ "
+#~ "(реєстрація на GitHub обов’язкова). Загальне обговорення відбувається через "
+#~ "розсилку `Open Procurement General <https://groups.google.com/group/open-"
+#~ "procurement-general>`_."

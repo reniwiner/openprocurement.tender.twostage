@@ -24,15 +24,10 @@ Schema
     |ocdsDescription|
     Qualification description.
 
-:eligible:
-    bool
-
-    Confirms compliance of eligibility criteria set by the procuring entity in the tendering documents.
-
 :qualified:
     bool
 
-    Confirms the absence of grounds for refusal to participate in accordance with Article 17 of the Law of Ukraine "On Public Procurement".
+    Confirms the absence of grounds for refusal to participate in the auction.
 
 :bidID:
     string, auto-generated
@@ -52,8 +47,7 @@ Schema
 :documents:
     List of :ref:`Document` objects
 
-    Container for Qualification documentation, protocols, reasons for
-    qualification or disqualification. Uploaded by tender committee.
+    Container for technicalSpecifications, qualificationDocuments
 
 :status:
     string
