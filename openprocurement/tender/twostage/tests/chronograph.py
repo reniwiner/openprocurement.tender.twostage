@@ -94,7 +94,7 @@ class TenderSwitchUnsuccessfulResourceTest(BaseTenderContentWebTest):
 
 
 class TenderAuctionPeriodResourceTest(BaseTenderContentWebTest):
-    initial_status = 'active.tendering'
+    initial_status = 'active.pre-qualification.stand-still'
 
     def test_set_auction_period(self):
         self.app.authorization = ('Basic', ('chronograph', ''))

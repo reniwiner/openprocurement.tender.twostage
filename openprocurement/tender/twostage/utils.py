@@ -105,6 +105,17 @@ def check_status(request):
     tender = request.validated['tender']
     now = get_now()
 
+    if tender.status in {'active.tendering', 'active.pre-qualification'}:
+        if tender.lots:
+            [
+                setattr(lot.auctionPeriod, 'startDate', None)
+                for lot in tender.lots
+                if lot.auctionPeriod and lot.auctionPeriod.startDate
+            ]
+        else:
+            if tender.auctionPeriod and tender.auctionPeriod.startDate:
+                tender.auctionPeriod.startDate = None
+
     if tender.status == 'active.tendering' and tender.tenderPeriod.endDate <= now:
         for complaint in tender.complaints:
             check_complaint_status(request, complaint)
