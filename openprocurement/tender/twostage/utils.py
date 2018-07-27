@@ -105,13 +105,11 @@ def check_status(request):
     tender = request.validated['tender']
     now = get_now()
 
-    if tender.status in {'active.tendering', 'active.pre-qualification'}:
+    if tender.status in ['active.tendering', 'active.pre-qualification']:
         if tender.lots:
-            [
-                setattr(lot.auctionPeriod, 'startDate', None)
-                for lot in tender.lots
-                if lot.auctionPeriod and lot.auctionPeriod.startDate
-            ]
+            for lot in tender.lots:
+                if lot.auctionPeriod and lot.auctionPeriod.startDate:
+                    lot.auctionPeriod.startDate = None
         else:
             if tender.auctionPeriod and tender.auctionPeriod.startDate:
                 tender.auctionPeriod.startDate = None
